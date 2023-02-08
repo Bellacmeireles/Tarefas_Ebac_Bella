@@ -1,0 +1,33 @@
+** Conceitos básicos e lógica de programação
+** Tarefa do módulo 6 **
+
+-Tarefa 1:
+* Resposta: Em suma, o que entendi sobre Programação Procedural e POO foi que na "programação procedural" é como se fosse uma forma de organizar e sequenciar um código de uma vez só. As vezes acabavam ficando difícil de ler porque os códigos ficam muito juntos, como se fosse um grande texto e tem que ser executado em sequência, o que dificulta se você errar um passo a passo ou quiser que "função3" venha antes de "função1".
+
+
+* Do outro lado temos Programação orientada a objetos - "POO" que é um modo de escrever código de forma mais enxuta, rápida e que facilita também o entendimento do mesmo.
+
+A meu ver POO facilita muito as aplicações, pense comigo: temos 2 estojos, um para colocar lápis de cor e o outro para colocar canetas, o estojo = objeto e as canetas e lápis = Método/Funções.
+Prog Procedural serial a forma de tentar colocar canetas por baixo e lápis de cor por cima em um só estojo (sempre tentando fazer da forma mais sequencial e organizada possível) e a Prog OO seria a forma de usar 2 estojos para separar as canetas dos lápis de cor.
+
+- Usando a forma de POO temos um código mais limpo, fácil de entender e não importa se eu vou usar primeiro o estojo com canetas ou o estojo com lápis de cor.
+- Resumindo, para mim codar de forma procedural é correto, mas não é a melhor forma.
+
+
++ Tarefa 2:
+** Hora de Acordar **
+
+Início {
+
+    1- Abro os olhos;
+    2- Fico mais 10 min na cama;
+    3- Levanto da cama;
+    4- Vou no banheiro;
+    5- Volto do banheiro, arrumo minha cama;
+    6- Troco de roupa;
+    7- Desço as escadas e vou até a cozinha tomar café;
+    8- Terminei o café;
+    9- Pego a louça usada no café e coloco na pia;
+    10- Pego a esponja e lavo a louça;
+
+Fim};
