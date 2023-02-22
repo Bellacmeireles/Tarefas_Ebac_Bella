@@ -1,9 +1,9 @@
+package Módulo8.Tarefa_Mód8;
 /**
- * Tarefa Mód 8
- * Crie um programa que faça a leitura de 4 notas e depois divida por 4 para obter a média.
+ * Crie um programa que faça a leitura de 4 notas.
+ * Divida por 4 e obtenha a media de cada uma.
  */
-public class Média {
-
+public class Media {
     private int nota;
 
     public int getnota() {
@@ -24,10 +24,9 @@ public class Média {
         nota3 = (nota3 / 4);
         nota4 = nota4 / 4;
 
-        System.out.println(nota1);
-        System.out.println(nota2);
-        System.out.println(nota3);
-        System.out.println(nota4);
+        System.out.println("Média nota1:" + " " + nota1);
+        System.out.println("Média nota2:" + " " +nota2);
+        System.out.println("Média nota3:" + " " +nota3);
+        System.out.println("Média nota4:" + " " +nota4);
     }
-    
 }
