@@ -1,4 +1,4 @@
-public class Exemplos {
+/*public class Exemplos {
     
 
     private int código;
@@ -10,7 +10,7 @@ public class Exemplos {
      * no float temos sempre que coloar um f no final.
      * private floate = 10.5f;
      */
-    private double valorDecimal1;
+   /*  private double valorDecimal1;
 
     private String texto;
 
@@ -40,3 +40,4 @@ public class Exemplos {
 
 
 }
+*/
