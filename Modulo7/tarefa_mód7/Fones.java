@@ -7,7 +7,7 @@
  * @see Fones.java
  */
 
-package Módulo7.tarefa_mód7;
+package Modulo7.tarefa_mód7;
 
 public class Fones {
     private String marca;

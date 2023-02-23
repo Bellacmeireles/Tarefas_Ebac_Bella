@@ -1,4 +1,4 @@
-package Módulo7.src;
+package Modulo7.src;
 
 public class ItemVenda {
     

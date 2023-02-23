@@ -1,4 +1,4 @@
-package Módulo8.Tarefa_Mód8;
+package Modulo8.Tarefa_mod8;
 /**
  * Crie um programa que faça a leitura de 4 notas.
  * Divida por 4 e obtenha a media de cada uma.
