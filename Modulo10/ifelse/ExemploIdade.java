@@ -12,10 +12,6 @@ public class ExemploIdade {
         System.out.println(idadeSt);
 
         s.close();
-
-        //Ao escrever o código igual o professor, percebir o "Resource leak: 's' is never closed" no Scanner s = new Scanner(System.in);
-        // Encontrei duas formas de resolver, um proposto pelo vscode que era usar o try e ficaria assim -> try (Scanner s = new Scanner(System.in)) {} e aouta maneira que encotrei na internet era usar o .close(); no final do código -> s.close();
-        // Qual Maneira de resolver é a correta e pq do erro? 
     }
 
     public static String getIdade(int idade) {
