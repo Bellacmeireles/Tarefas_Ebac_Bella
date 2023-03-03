@@ -12,6 +12,7 @@ public class ExAnimal {
         String animal = exampleOfIF(texto);
         System.out.println(animal);
 
+        s.close();
     }
 
     public static String exampleOfIF(String animal) {
