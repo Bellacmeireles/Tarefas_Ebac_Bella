@@ -1,3 +1,4 @@
+package Modulo11.queUe;
 import java.util.ArrayDeque;
 import java.util.Deque;
 
@@ -59,6 +60,7 @@ public class ExArrayDeque {
         String val = ad.remove();
         ad.remove("Black");
 
+        System.out.println(val);
         System.out.println("Elements in the ArrayDeque after remove: " + ad);
 
         ad.removeFirst();
@@ -104,6 +106,8 @@ public class ExArrayDeque {
         boolean val = d.offer("Jaipur");
         d.offerFirst("Goa");
         d.offerLast("Mumbai");
+
+        System.out.println(val);
 
         System.out.println("Elements in the Deque after offer, offerFirst and offerLast: " + d);
 

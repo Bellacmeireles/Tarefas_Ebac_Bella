@@ -20,7 +20,7 @@ public class ExHashSetAluno {
         Aluno1 b = new Aluno1("Antonio Sousa", "OpenOffice", 0);
         Aluno1 c = new Aluno1("Lúcia Ferreira", "Internet", 0);
         Aluno1 d = new Aluno1("Antonio Sousa", "OpenOffice", 10);
-        Aluno1 e = new Aluno1("Teste", "OpenOffice", 10);
+       // Aluno1 e = new Aluno1("Teste", "OpenOffice", 10);
         conjunto.add(a);
         conjunto.add(b);
         conjunto.add(c);

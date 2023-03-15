@@ -29,7 +29,33 @@ public class MaleAndFemale {
 
     private static void separatingByGender() {
         System.out.println("****** Separating by gender ******");
-        List<NameAndGender> group1 = new ArrayList<NameAndGender>();
+        String group1 = "Ana-Female, Bella-Female, Caio-Male, Samuel-Male";
+        String[] peopleArray = group1.split(", ");
+
+        for (String person : peopleArray) {
+            String[] personData = person.split("-");
+            String name = personData[0];
+            String gender = personData[1];
+            System.out.println("Name: " + name + ", " + "Gender: " + gender);
+            System.out.println("");
+        }
+
+    }
+}
+/**
+ * 
+ * String group1 = "Ana,Female; Bella,Female; Caio,Male; Samuel,Male";
+        String[] peopleArray = group1.split(";");
+
+        for (String person : peopleArray) {
+            String[] personData = person.split(",");
+            String name = personData[0];
+            String gender = personData[1];
+            System.out.println("Name:" + name);
+            System.out.println("Gender:" + gender);
+        }
+
+ * List<NameAndGender> group1 = new ArrayList<NameAndGender>();
         NameAndGender a = new NameAndGender("Ana", "Female");
         NameAndGender b = new NameAndGender("Bella", "Female");
         NameAndGender c = new NameAndGender("Caio", "Male");
@@ -54,5 +80,4 @@ public class MaleAndFemale {
         System.out.println("By gender Female: " + female);
         System.out.println("");
     }
-
-}
+ */
