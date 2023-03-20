@@ -26,6 +26,7 @@ public class MaleAndFemale {
         }
         System.out.println(nome + sexo);
 
+        System.out.println(" ");
         System.out.println("**** Grupo Feminino ****");
         for (String nomeF : femininos) {
             System.out.println(nomeF);
