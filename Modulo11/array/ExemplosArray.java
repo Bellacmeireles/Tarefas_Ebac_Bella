@@ -82,16 +82,16 @@ public class ExemplosArray {
     private static void declaracaoArray() {
         System.out.println("****** declaracaoArray ******");
         // [] - são inseridos em uma variável que referecia um array
-        int[] a = new int[4];
+        //int[] a = new int[4];
 
         // OUTRA MANEIRA DE FAZER UMA DECLARAÇÃO DE ARRAY
-        int[] b;
+        //int[] b;
 
         // DECLARANDO VÁRIOS ARRAYS
-        int[] r = new int[44], k = new int[23];
+        //int[] r = new int[44], k = new int[23];
 
         // {} - inicializar valores em um array sua declaração
-        int[] inciaValores = { 12, 32, 54, 6, 8, 89, 64, 64, 6 };
+        //int[] inciaValores = { 12, 32, 54, 6, 8, 89, 64, 64, 6 };
 
         // DECLARA UM ARRAY DE INTEIROS
         int[] meuArray;
