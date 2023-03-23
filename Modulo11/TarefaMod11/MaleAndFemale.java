@@ -4,6 +4,13 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.Scanner;
 
+/**
+ * @see {@code} -> tentandoDeNovo.java
+ * Essa classe estava com problemas para compilar porque eu não escrevi os códigos corretamente
+ * Criei a classe tentandoDeNovo como uma forma de tentar resolver o problema sem mexer nessa classe, para caso eu conseguisse resolver, poderia então comparar e entender onde errei
+ * 
+ * 
+ */
 public class MaleAndFemale {
     public static void main(String[] args) {
         List<String> femininos = new ArrayList<>();
