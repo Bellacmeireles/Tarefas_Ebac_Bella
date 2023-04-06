@@ -1,0 +1,11 @@
+1- criar uma classe chamada = (classe abstrata) Pessoa
+
+2- criar duas subclasses -> 1º Pessoafisica e a outra 2º PessoaJuridica (concretas)
+
+3- colocar as propiedas das subclasses na classe abstrata ( OU SEJA OQ É COMUM PARA ESSAS DUAS PESSOAS - EX: NOME )
+
+4- criar propiedades especificas para cada classe concreta
+
+Pessoafisica = nome e MEI
+
+PessoaJuridica = nome e CNPJ
