@@ -1,21 +1,11 @@
 package Modulo13.TarefaMód13;
 
 public class PessoaJuridica extends Pessoa {
-    public PessoaJuridica(String nome) {
-        super(nome);
-    }
 
-    private String nome;
     private String empresa;
     private Double cnpj;
 
-    public String getNome() {
-        return nome;
-    }
-    public void setNome(String nome) {
-        this.nome = nome;
-    }
-
+    
     public String getEmpresa() {
         return empresa;
     }
@@ -32,7 +22,10 @@ public class PessoaJuridica extends Pessoa {
 
     @Override
     public String nomes() {
-        return nome;
+        return empresa + " " + cnpj;
     }
+    
+    
+  
 
 }
