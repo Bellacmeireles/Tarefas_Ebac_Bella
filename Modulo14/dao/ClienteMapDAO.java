@@ -24,12 +24,13 @@ public class ClienteMapDAO implements IClienteDAO {
             return false;
         }
         this.map.put(cliente.getCpf(), cliente);
-        return null;
+        return true;
     }
 
     @Override
     public void excluir(Long cpf) {
         Cliente clienteCadastrado = this.map.get(cpf);
+        
         if (clienteCadastrado != null) {
             this.map.remove(clienteCadastrado.getCpf(), clienteCadastrado);
         }
@@ -50,8 +51,7 @@ public class ClienteMapDAO implements IClienteDAO {
 
     @Override
     public Cliente consultar(Long cpf) {
-        this.map.get(cpf);
-        return null;
+        return this.map.get(cpf);
     }
 
     @Override

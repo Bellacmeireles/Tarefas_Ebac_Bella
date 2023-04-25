@@ -3,6 +3,7 @@ package Modulo14.TarefaCadastro;
 import java.util.Objects;
 
 public class Cliente {
+
     private String nome;
     private Long cpf;
     private Long tel;
@@ -86,17 +87,43 @@ public class Cliente {
         return Objects.equals(cpf, cliente.cpf);
     }
 
+    /* @Override
+    public int hashCode() {
+        int hash = 7;
+        hash = 79 * hash + Objects.hashCode(this.cpf);
+        return hash;
+    } */
+
     @Override
     public int hashCode() {
         return Objects.hash(cpf);
     }
 
-    @Override
+     @Override
     public String toString() {
         return "Cliente{" +
-        "nome='" + nome + '\'' +
-        ", cpf=" + cpf +   
-    '}';
+                "nome='" + nome + '\'' +
+                ", cpf=" + cpf +
+                '}';
     }
     
 }
+/*
+ * public static IClienteDAO getiClienteDAO() {
+        return iClienteDAO;
+    }
+    public static void setiClienteDAO(IClienteDAO iClienteDAO) {
+        TelaApp.iClienteDAO = iClienteDAO;
+    }
+
+    linha 40         /* if (isOpcaoCadastro(opcao)) {
+            JOptionPane.showMessageDialog(null, "Opcao: " + opcao, "ERRO", JOptionPane.INFORMATION_MESSAGE);
+        } 
+        
+                //Tentar validar se todos os campos estão preenchidos.
+        //Se não tiver, passr null no construtor onde o valor é nulo
+        //Cliente cliente = new Cliente(dadosSeparados[0],dadosSeparados[1],null,dadosSeparados[3],dadosSeparados[4],dadosSeparados[5],dadosSeparados[6])
+        */
+ 
+   
+
