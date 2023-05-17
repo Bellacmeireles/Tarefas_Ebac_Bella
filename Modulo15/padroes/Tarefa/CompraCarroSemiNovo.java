@@ -4,7 +4,7 @@ public class CompraCarroSemiNovo extends Loja {
 
     @Override
     CarroSemi montaCarro(String compradoS) {
-        if("Carro Semi Novo".equals(compradoS)) {
+        if("B".equals(compradoS)) {
             return new OnixCar("100Cavalos", "Branco", "Cheio");
         } else {
             return null;

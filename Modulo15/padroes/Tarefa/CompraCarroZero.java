@@ -3,9 +3,9 @@ package Modulo15.padroes.Tarefa;
 public class CompraCarroZero extends Fabrica {
 
     @Override
-    Carro montaCarro(String comprado) {
-        if ("Carro Novo".equals(comprado)) {
-            return new HilluxCar("120Cavalos", "Prata", "Cheio");
+    Carro montaCarro(boolean comprado) {
+        if ("A".equals(comprado)) {
+            return new HilluxCar("Motoe de 120 Cavalos", "Prata", "Tanque");
         } else {
             return null;
         }

@@ -14,7 +14,7 @@ public abstract class Carro {
 
     public void startEngine() {
         System.out.println(getClass().getSimpleName());
-        System.out.println("O " + tanqueGas + " está cheio e preparado para utilizar e o " + motor + " horsepowers.n " );
+        System.out.println("O  " + tanqueGas + " está cheio e preparado para utilizar e o " + motor + " horsepowers.n " );
     }
 
     public void mecanica() {
