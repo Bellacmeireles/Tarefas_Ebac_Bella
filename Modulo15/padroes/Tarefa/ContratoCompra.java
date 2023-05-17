@@ -9,7 +9,6 @@ public class ContratoCompra {
       
     }
 
-    
 
     private static Fabrica getFabrica(Comprador cliente) {
         if (cliente.carroNovo()) {
