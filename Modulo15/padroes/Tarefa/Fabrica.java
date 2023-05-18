@@ -2,7 +2,7 @@ package Modulo15.padroes.Tarefa;
 
 public abstract class Fabrica {
     
-    public Carro carroZero(boolean comprado) {
+    public Carro carroZero(String comprado) {
         Carro carro = montaCarro(comprado);
         carro = entregaCarro(carro);
         return carro;
@@ -15,6 +15,6 @@ public abstract class Fabrica {
         return carro;
     }
 
-    abstract Carro montaCarro(boolean comprado);
+    abstract Carro montaCarro(String comprado);
     
 }

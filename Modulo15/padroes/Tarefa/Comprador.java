@@ -2,18 +2,18 @@ package Modulo15.padroes.Tarefa;
 
 public class Comprador {
     
-    private boolean carroNovo;
-    private boolean semiNovo;
+    private String carroNovo;
+    private String semiNovo;
 
-    public Comprador(boolean carroNovo, boolean semiNovo) {
+    public Comprador(String carroNovo, String semiNovo) {
         this.carroNovo = carroNovo;
         this.semiNovo = semiNovo;
     }
 
-    public boolean carroNovo() {
+    public String carroNovo() {
         return carroNovo;
     }
-    public boolean semiNovo() {
+    public String semiNovo() {
         return semiNovo;
     }
 }

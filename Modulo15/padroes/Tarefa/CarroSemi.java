@@ -1,6 +1,6 @@
 package Modulo15.padroes.Tarefa;
 
-public class CarroSemi {
+public abstract class CarroSemi {
 
     private String motor;
     private String cor;
@@ -10,6 +10,11 @@ public class CarroSemi {
         this.motor = motor;
         this.cor = cor;
         this.tanqueGas = tanqueGas;
+    }
+
+    public void startEngine() {
+        System.out.println(getClass().getSimpleName());
+        System.out.println("O  " + tanqueGas + " está cheio e preparado para utilizar e o " + motor + " horsepowers.n " );
     }
 
     public void mecanicaS() {
