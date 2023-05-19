@@ -12,9 +12,3 @@ public class CompraCarroZero extends Fabrica {
     }
     
 }
-
-/**
- * parei com a vertente de carro novo pronta
- * falta a vertente de semi novos
- * e depois criar o Demo = contratosCompraRealizada, que tera as duas vertentes 
- */

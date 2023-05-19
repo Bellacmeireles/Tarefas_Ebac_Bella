@@ -6,8 +6,8 @@ public class ContratoCompra {
         Fabrica fab = getFabrica(cliente);
         Carro car = fab.carroZero(cliente.carroNovo());
         car.startEngine();  
-        System.out.println();
         
+        System.out.println();
 
         Loja loja = getLoja(cliente);
         CarroSemi carroSemi = loja.carroSemi(cliente.semiNovo());
@@ -22,15 +22,5 @@ public class ContratoCompra {
     private static Fabrica getFabrica(Comprador cliente) {
         return new CompraCarroZero();
     }
-    
-    
-   
-    /* {
-        if (cliente.carroNovo()) {
-            return new CompraCarroZero();
-        } else {
-            return new CompraCarroZero();
-        }
-    } */
 
 }
