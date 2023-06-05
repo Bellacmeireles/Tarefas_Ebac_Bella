@@ -1,0 +1,18 @@
+Respostas:
+
+1- Padrão de projeto: Injeção de Dependência 
+ O padrão de injeção de dependência trabalha baseado em abstrações, sejam elas classes abstratas ou interfaces. que nem aprendemos nos módulos anteriores: programe para uma interface e nunca para uma implementação. 
+
+ Podemos trabalhar com a injeção de dependência de três formas: ¹injeção por construtor (constructor injection), ²injeção por propriedade ou getters e setters no caso do Java ( setter injection ) e ³injeção por interface ( interface injection ).
+
+2- Como o Spring Lida com Injeção de Dependências
+ O Spring lida com injeção de dependências utilizando um Spring IoC Container conhecido como Spring Context. Esse container é o responsável por gerenciar todas as dependências do projeto de forma automática.
+ Os objetos gerenciados pelo container do Spring são chamados de Beans.
+ Uma aplicação rodando pode ter vários beans ativos e gerenciados pelo Spring, pois, esses beans são os mesmos objetos que nós utilizamos no projeto normalmente, a única diferença é que a classe deles recebe uma anotação especial que determina que os objetos dessa classe devem ser gerenciados pelo Ioc container. 
+
+3- O que eu entendi, foi que, a injeção de dependências serve principalmente 
+ para deixar o código com o menor nível de acoplamento possível.
+ Você sempre tem que escrever um código que seja fácil de manutenção, modificação e   incluir/excluir funcionalidades.
+ A minha conclusão é que a Injeção Dependências é um padrão que se usa nos projetos para deixar o código com melhor legibilidade, interpretação, de fácil manutenção e que ajuda a deixar o código desacoplado.
+ a injeção de dependências é uma técnica onde um objeto (ou método estático) fornece as dependências de outro objeto. Uma dependência é um objeto que pode ser usado (um serviço).
+ Para isso ele usa umas das 3 formas citadas na resposta 1, a mais correta seria a 3° opção, que cria um objeto que implementa a interface e injeta uma dependência em qualquer cliente que for passado a ele. 

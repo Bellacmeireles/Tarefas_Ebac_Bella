@@ -1,0 +1,6 @@
+Tarefa Mód 16
+
+1- Pesquisar na internet o padrão de projeto: Injeção de Dependência
+2- Dica Injeção de Dependência com Spring
+3- Explique com suas palavras o que é e depois suba a atividade na Ebac
+
