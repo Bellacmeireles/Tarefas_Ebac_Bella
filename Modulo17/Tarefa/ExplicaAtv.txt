@@ -1,0 +1,7 @@
+13/06
+Tarefa Mód 17
+* colocar em pratica generics
+
+1- criar uma lista/ classes de carros (diferentes carros) | sua lista devera receber qualquer tipo de carro dentro dessa lista
++ dica: visitar o modulo q fala sobre classe abstrata e classe concretas (pensar nessa lista utilizando a classe abstrata)
+
