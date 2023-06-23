@@ -8,7 +8,7 @@ import Modulo17.genericDois.cadastro.domain.Persistente;
 
 public abstract class GenericDAO<T extends Persistente> implements IGenericDAO<T>{
 
-    protected Map<Class, Map<Long, T>> map;
+    protected Map<Class<?>, Map<Long, T>> map;
 
     public abstract Class<T> getTipoClass();
     public abstract void atualizarDados(T entity, T entityCadastrado);
