@@ -1,10 +1,13 @@
 package Modulo19.Tarefa;
 
+
+/* import java.lang.reflect.Field;
+import Modulo18.Tarefa.TabelaAnnotation; */
 import Modulo18.Tarefa.TabelaComAnnotation;
 
 public class ImprimiTabela {
     public static void main(String[] args) {
-
+    
         /* Class<?> tabela = TabelaComAnnotation.class;
         System.out.println(tabela); */
                 
@@ -25,6 +28,8 @@ public class ImprimiTabela {
             }
         } */
     }
+
 }
+
     
 
