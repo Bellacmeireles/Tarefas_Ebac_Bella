@@ -1,0 +1,29 @@
+Tarefa Mód 20
+
+1- Pesquisar um pouco mais sobre o assunto "Expressões Lambdas".
+2- Explicar com suas palavras o que você entendeu sobre o assunto.
+
+
+Expressões Lambdas:
+
+As expressões lambda são métodos ou funções anônimas as quais geralmente não possuem um nome e não pertencem a nenhuma classe. Uma classe em Java, por exemplo, para ser usada, deve conter atributos e métodos (funções) dentro do seu corpo para que sejam utilizadas. Por sua vez, com as expressões lambda, por ser uma função que não necessita de uma declaração, não é necessário colocar um nome, o tipo de retorno e o modificador de acesso, sendo que a ideia é que o método seja declarado no mesmo lugar em que será usado.
+
+Conceitualmente, as "lambdas expressions" expressam instâncias de interfaces funcionais (tanto que elas devem ser sinalizadas com a notação @FuncionalInterface acima da declaração da classe), ou seja, são usadas para implementar um método definido por uma interface funcional.
+
+Características das Lambdas Expressions
+Uma expressão lambda possui as seguintes características:
+
++ Redução da quantidade de linhas de código: Em todos os snippets apresentados até o momento, pode-se verificar que houve uma boa redução na quantidade de classes criadas e, por tabela, na quantidade de linhas de código que foram geradas. Por consequente, há um bom ganho de produtividade no que está sendo realizado;
+
++ Declaração do tipo para o parâmetro é opcional: A informação do tipo dos parâmetros que irão compor a função tornam-se opcionais. O compilador pode inferir sobre o tipo do mesmo com base no parâmetro;
+
++ Uso dos parênteses ao redor do parâmetro é opcional: A declaração do parâmetro (definida como obrigatória na criação das funções, por exemplo) torna-se opcional neste caso. No entanto, ao usar vários parâmetros, os parênteses são necessários;
+
++ Uso opcionais das chaves ({}) que delimitam o corpo da lambda: Caso o corpo do método contenha um único argumento, não é necessário delimitar o uso das chaves no bloco de código;
+
++ A palavra-chave "return" é opcional: O compilador irá retornar automaticamente o valor se o corpo conter uma única expressão para retornar o valor. Com isso, as chaves ({}) entre aspas (' ') são requeridas para indicar que a expressão irá retornar um valor.
+
+
+- O texto a cima está bem explicado mas a minha opinião sobre Lambdas Expressions é que ela deixa o código muito mais enchuto, facilitando muito a leitura do código. Não achei tão difícil pois me lembrou um pouco a sintaxe de JavaScript. 
+
+(Deixei um exemplo que fiz para fixar mais o assunto -> Tarefa.java);
