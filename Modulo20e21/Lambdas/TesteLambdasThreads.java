@@ -1,4 +1,4 @@
-package Modulo20.Lambdas;
+package Modulo20e21.Lambdas;
 
 public class TesteLambdasThreads {
     public static void main(String[] args) {

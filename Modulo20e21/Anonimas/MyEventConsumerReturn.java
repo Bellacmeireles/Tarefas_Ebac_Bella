@@ -1,4 +1,4 @@
-package Modulo20.Anonimas;
+package Modulo20e21.Anonimas;
 
 @FunctionalInterface
 public interface MyEventConsumerReturn<T> {

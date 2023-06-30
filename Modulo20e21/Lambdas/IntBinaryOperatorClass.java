@@ -1,4 +1,4 @@
-package Modulo20.Lambdas;
+package Modulo20e21.Lambdas;
 
 import java.util.function.IntBinaryOperator;
 
