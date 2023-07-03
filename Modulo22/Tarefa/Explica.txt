@@ -1,0 +1,8 @@
+Tarefa Mód 22
+
+* DAR UMA OLHADA NA TARFEFA DE VARIOS GÊNEROS
+
+1- Ler novamente uma lista de pessoas no console
+2- Imprimir o nome e o genero da pessoa - ler todos os valores em memória ( USANDO LAMBDAS )
+3- Criar uma outra lista, SÓ  COM AS MULHERES DESSA LISTA ( USANDO LAMBDAS )
+
