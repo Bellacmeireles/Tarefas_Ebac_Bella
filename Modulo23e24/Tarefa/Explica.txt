@@ -1,0 +1,5 @@
+Mód 23/24
+
+1- Pegar a tarefa do mód 22 wsobre streams 
+2- Faça um teste que garanta está somente mulheres no resultado.
+3- criar um teste com JUnit que vai olhar dentro da lista e verificar que só tenha mulheres na lista
