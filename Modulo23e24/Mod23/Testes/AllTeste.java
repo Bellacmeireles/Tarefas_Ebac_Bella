@@ -1,4 +1,4 @@
-package Modulo23e24.Testes;
+package Modulo23e24.Mod23.Testes;
 
 import org.junit.runner.RunWith;
 import org.junit.runners.Suite;

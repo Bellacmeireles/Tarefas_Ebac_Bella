@@ -1,0 +1,67 @@
+Mód 23/24
+
+1- Pegar a tarefa do mód 22 wsobre streams 
+2- Faça um teste que garanta está somente mulheres no resultado.
+3- criar um teste com JUnit que vai olhar dentro da lista e verificar que só tenha mulheres na lista
+
+-------------------------------------------------------------------------------------------------
+
+ANOTAÇÕES SOBRE A ATIVIDADE - 04/07/2023
+
+1- minha orimeira tentativa de executar a tarefa deu erro, pois não tinha entendido direito a aula e não sabia como encaixar algumas formas de teste puxando informação de outra classe.
+
+2- a primeira tentativa de códico completamente errada foi essa:
+
+public class TestePerson {
+    @Test
+    public void testListWomen() {
+
+        List<Person> listPerson = new Person().listaPeTarefas();
+
+        System.out.println("Women Group: ");
+        listPerson.stream()
+                .filter(pessoaList -> pessoaList.getGender().equals("Female"))
+                .collect(Collectors.toList())
+                .forEach(System.out::println);
+    }
+    @Test
+    public void teste() {
+        Person lista = new Person();
+        String retorno = lista.getClass().getName();
+        Assert.assertEquals("Female", retorno);
+    }
+}
+
+3- mandei a duvida para o professor ( ontem, dia 03/07/2023 ) pois não estava entendendo e a ideia dos teste ainda estavam muito complexas na minha cabeça. Ainda sem resposta ( hoje, dia 04/07 - resolvi buscar a ajuda do ChatGpt )
+
+4- Descobri que para resolver precisava atrelar duas List<>:
+
+        List<Person> listPerson = new Person().listaPeTarefas();
+        List<Person> womenList = listPerson.stream()
+
+5- e em seguida os parâetros do method .stream():
+
+    List<Person> listPerson = new Person().listaPeTarefas();
+    
+    List<Person> womenList = listPerson.stream()
+                .filter(person -> person.getGender().equals("Female"))
+                .collect(Collectors.toList());
+
+6- e por último simplesmente fazer um for para pegar os resultados (coisa em que nenhum momento passou pela minha cabeça pq para mim só se usava o  Assert.assertEquals() declarando uma String na linha de cima como tinha visto nas aulas, mas eu estava completamente enganada ):
+
+public class TestePerson {
+
+    @Test
+    public void testListWomen() 
+
+        List<Person> listPerson = new Person().listaPeTarefas();
+
+        List<Person> womenList = listPerson.stream()
+                .filter(person -> person.getGender().equals("Female"))
+                .collect(Collectors.toList());
+
+        for (Person person : womenList) {
+            Assert.assertEquals("Female", person.getGender());
+        }
+
+}

@@ -1,4 +1,4 @@
-package Modulo23e24.Tarefa;
+package Modulo23e24.Tarefa23;
 
 import java.util.List;
 import java.util.stream.Collectors;
