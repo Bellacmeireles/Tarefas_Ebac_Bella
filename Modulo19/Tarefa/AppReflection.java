@@ -1,4 +1,4 @@
-package Modulo19;
+package Modulo19.Tarefa;
 
 import java.lang.reflect.Constructor;
 import java.lang.reflect.Field;
@@ -21,7 +21,7 @@ public class AppReflection {
             System.out.println(prod1);
 
             Field[] fields = prod1.getClass().getDeclaredFields();
-            for(Field field : fields) {
+            for (Field field : fields) {
                 Class<?> type = field.getType();
                 String nome = field.getName();
                 System.out.println(type);
@@ -52,11 +52,11 @@ public class AppReflection {
                 }
             }
 
-        } catch (NoSuchMethodException | InstantiationException | IllegalAccessException | InvocationTargetException e) {
+        } catch (NoSuchMethodException | InstantiationException | IllegalAccessException
+                | InvocationTargetException e) {
             e.printStackTrace();
-        
+
         }
-            
-        
+
     }
 }
