@@ -2,20 +2,20 @@ package Modulo20e21.Anonimas;
 
 public class QuandoUtilizarParenteses {
     public static void main(String[] args) {
-        MyEventConsumer myEvent = (Object s) -> {
+        /* MyEventConsumer myEvent = (Object s) -> {
             System.out.println(s);
-        };
+        }; */
 
-        MyEventConsumer myEvent1 = (s) -> {
+        /* MyEventConsumer myEvent1 = (s) -> {
             System.out.println(s);
-        };
+        }; */
 
         MyEventConsumer myEvent2 = s -> System.out.println(s);
 
-        MyEventConsumer myEvent3 = s -> {
+        /* MyEventConsumer myEvent3 = s -> {
             System.out.println(s);
             System.out.println(s);
-        };
+        }; */
         myEvent2.consumer("as");
 
         MyEventConsumerReturn<Integer> ret = s -> {
@@ -25,11 +25,11 @@ public class QuandoUtilizarParenteses {
         };
         ret.consumer(1);
 
-        MyEventConsumerReturn<String> retS = s -> {
+        /* MyEventConsumerReturn<String> retS = s -> {
             System.out.println(s);
             System.out.println(s);
             return "Ola";
-        };
+        }; */
         ret.consumer(1);
 
         MyEventConsumer myEvent4 = s -> imprimir(s);
