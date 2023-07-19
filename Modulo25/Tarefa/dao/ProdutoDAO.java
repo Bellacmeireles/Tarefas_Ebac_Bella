@@ -2,19 +2,19 @@ package Modulo25.Tarefa.dao;
 
 import Modulo25.Tarefa.domain.Produto;
 
-public class ProdutoDAO implements IProdutoDAO {
+public class ProdutoDAO implements IProdutoDao {
 
     @Override
     public void cadastrar(Produto produto) {
-        // TODO Auto-generated method stub
+        
     }
 
     @Override
-    public void buscar(Produto produto) {
-        // TODO Auto-generated method stub
-       
+    public Produto buscarProduto(String nome) {
+        
+        return null;
     }
 
-    
-    
+   
+
 }

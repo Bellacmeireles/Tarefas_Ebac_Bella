@@ -3,35 +3,44 @@ package Modulo25.Tarefa.test;
 import org.junit.Assert;
 import org.junit.Test;
 
-import Modulo25.Tarefa.dao.IProdutoDAO;
+import Modulo25.Tarefa.dao.IProdutoDao;
 import Modulo25.Tarefa.domain.Produto;
+import Modulo25.Tarefa.service.IProdutoService;
+import Modulo25.Tarefa.service.ProdutoService;
 import Modulo25.Tarefa.test.dao.ProdutoDaoMock;
+
 
 
 public class ProdutoDaoTest {
     
-    private IProdutoDAO produtoDAO;
+    private IProdutoService produtoService;
     private Produto produto;
 
     public ProdutoDaoTest() {
-        produtoDAO = new ProdutoDaoMock();
+        IProdutoDao dao = new ProdutoDaoMock();
+        produtoService = new ProdutoService(dao);
+        
     }
 
     @Test
     public void pesquisarProdutos() {
-        produto = new Produto();
+        Produto produto = new Produto();
         produto.setNome("Caminhão de Brinquedo");
         produto.setCodigo(682712L);
 
-        produtoDAO.cadastrar(produto);
+        produtoService.cadastrar(produto);
+
+        Produto produtoConsultado = produtoService.buscarProduto(produto.getNome());
+        Assert.assertNotNull(produtoConsultado);
+
     }
 
-    @Test
-    public void buscarProduto() {
+    /* @Test
+    public void nomeDoProduto() {
         produto.setNome("Bicicleta");
-        produtoDAO.buscar(produto);
+        produtoService.buscar(produto);
 
         Assert.assertEquals("Bicicleta", produto.getNome());
-    }
+    } */
 
 }
