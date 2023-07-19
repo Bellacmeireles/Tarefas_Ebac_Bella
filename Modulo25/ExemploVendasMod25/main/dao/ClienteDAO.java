@@ -1,24 +1,22 @@
 package Modulo25.ExemploVendasMod25.main.dao;
 
+import Modulo25.ExemploVendasMod25.main.dao.generics.GenericDAO;
 import Modulo25.ExemploVendasMod25.main.domain.Cliente;
 
-public class ClienteDAO implements IClienteDAO {
+public class ClienteDAO extends GenericDAO<Cliente> implements IClienteDAO {
 
-    @Override
-    public Boolean salvar(Cliente cliente) {
-        return true;
+    public ClienteDAO() {
+        super();
     }
 
     @Override
-    public Cliente buscarPorCPF(Long cpf) {
-        return null;
+    public Class<Cliente> getTipoClasse() {
+        return Cliente.class;
     }
 
-    
     @Override
-    public void excluir(Long cpf) {
+    public void atualiarDados(Cliente entity, Cliente entityCadastrado) {
         
     }
-    
-    
+
 }

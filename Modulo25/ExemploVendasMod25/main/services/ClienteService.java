@@ -3,6 +3,7 @@ package Modulo25.ExemploVendasMod25.main.services;
 /* import Modulo25.ExemploVendasMod25.main.dao.ClienteDAO;
  */import Modulo25.ExemploVendasMod25.main.dao.IClienteDAO;
 import Modulo25.ExemploVendasMod25.main.domain.Cliente;
+import Modulo25.ExemploVendasMod25.main.exceptions.TipoChaveNaoEncontradaException;
 
 public class ClienteService implements IClienteService {
 
@@ -13,18 +14,24 @@ public class ClienteService implements IClienteService {
     }
 
     @Override
-    public Boolean salvar(Cliente cliente) {
-        return clienteDAO.salvar(cliente);
+    public Boolean salvar(Cliente cliente) throws TipoChaveNaoEncontradaException {
+        return clienteDAO.cadastrar(cliente);
     }
 
     @Override
     public Cliente buscarPorCPF(Long cpf) {
-        return clienteDAO.buscarPorCPF(cpf);
+        return clienteDAO.consultar(cpf);
     }
 
     @Override
     public void excluir(Long cpf) {
         clienteDAO.excluir(cpf);
+        
+    }
+
+    @Override
+    public void alterar(Cliente cliente) throws TipoChaveNaoEncontradaException {
+        clienteDAO.alterar(cliente);
         
     }
 

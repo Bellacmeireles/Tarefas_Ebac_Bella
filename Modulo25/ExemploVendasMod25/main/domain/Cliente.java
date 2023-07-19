@@ -1,7 +1,7 @@
 package Modulo25.ExemploVendasMod25.main.domain;
 
 
-public class Cliente {
+public class Cliente implements Persistente {
 
     private String nome;
     private Long cpf;

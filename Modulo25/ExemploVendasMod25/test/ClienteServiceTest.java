@@ -7,6 +7,7 @@ import org.junit.Test;
 /* import Modulo25.ExemploVendasMod25.main.dao.ClienteDAO; */
 import Modulo25.ExemploVendasMod25.main.dao.IClienteDAO;
 import Modulo25.ExemploVendasMod25.main.domain.Cliente;
+import Modulo25.ExemploVendasMod25.main.exceptions.TipoChaveNaoEncontradaException;
 import Modulo25.ExemploVendasMod25.main.services.ClienteService;
 import Modulo25.ExemploVendasMod25.main.services.IClienteService;
 import Modulo25.ExemploVendasMod25.test.dao.ClienteDaoMock;
@@ -34,7 +35,7 @@ public class ClienteServiceTest {
         cliente.setEstado("SP");
         cliente.setNumero(10);
         cliente.setTel(12997161270L);
-        clienteService.salvar(cliente);
+        //clienteService.salvar(cliente);
     }
 
     @Test
@@ -46,7 +47,7 @@ public class ClienteServiceTest {
     }
 
     @Test
-    public void salvarCliente() {
+    public void salvarCliente() throws TipoChaveNaoEncontradaException {
         Boolean retorno = clienteService.salvar(cliente);
         Assert.assertTrue(retorno);
     }
@@ -54,6 +55,14 @@ public class ClienteServiceTest {
     @Test
     public void excluirCliente() {
         clienteService.excluir(cliente.getCpf());
+    }
+
+    @Test
+    public void alterarCliente() throws TipoChaveNaoEncontradaException {
+        cliente.setNome("Bella Cabral");
+        clienteService.alterar(cliente);
+
+        Assert.assertEquals("Bella Cabral", cliente.getNome());
     }
 
 }
