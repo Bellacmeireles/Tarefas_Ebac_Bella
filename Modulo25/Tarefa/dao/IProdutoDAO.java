@@ -6,7 +6,11 @@ public interface IProdutoDao {
 
     void cadastrar(Produto produto);
     
-    Produto buscarProduto(String nome);
+    Produto buscarIDProduto(Long codigo);
+
+    void buscarNomeProduto(String nome);
+
+    void buscarNomeProduto(Produto produto); // vem do metodo -> nomeProdutos2() {}
 
     
 

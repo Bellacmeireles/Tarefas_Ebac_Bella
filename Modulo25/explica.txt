@@ -1,10 +1,19 @@
-Tarefqa mód 25
+Tarefa mód 25 -> 19/07
 
-+ terminar de fazer os implementos das classe "Produto" que tem no mód19
++ terminar o ExemplosVendasMod25 trazendo os implementos das classe "Produto" que tem no mód19
 + fazer os meus passou que o professor fez, só que dessas vez passando isso para Produto
 
 1- Trazer a classe Produto
-2- Criar a class ProdutoDAO e a Insterfacde IProdutoDAO
-3- Criar tmb a class de BD(banco de dados) ProdutoDaoMock
-4- e por último a classe de test -> ProdutoDAOTest
+2- Criar a class ProdutoService e a Insterface IProdutoService
+3- Criar a class ProdutoDAO e a Insterfacde IProdutoDAO
+4- Criar tmb a class de BD(banco de dados) ProdutoDaoMock
+5- E por último as classes de test -> ProdutoDAOTest e ProdutoTest
 
+
+Tarefa mód 25 -> 20/07 / Concluida
+
++ Trouxe a classe Produto para ser implementada, criei as duas formas de testes, tanto no service como no Dao para serm testadas
++ Implementei as classe de regra de negócio -> ProdutoService e IProdutoService
++ Implementei também as classes de DAO para fazer (simular) o acesso do Banco de Dados
+
+- Os dois testes foram concluidos com sucesso e não apresentarem erros!

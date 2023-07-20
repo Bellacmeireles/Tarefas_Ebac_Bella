@@ -6,6 +6,10 @@ import Modulo25.Tarefa.domain.Produto;
 
 public class ProdutoService implements IProdutoService {
 
+    /**
+     * aqui se testa coisas de validação + o DAO
+     */
+
     private IProdutoDao produtoDao;
 
     public ProdutoService(IProdutoDao produtoDao) {
@@ -18,10 +22,20 @@ public class ProdutoService implements IProdutoService {
     }
 
     @Override
-    public Produto buscarProduto(String nome) {
+    public Produto buscarIDProduto(Long codigo) {
     
-        return produtoDao.buscarProduto(nome);
+        return produtoDao.buscarIDProduto(codigo);
     
+    }
+
+    @Override
+    public void buscarNomeProduto(String nome) {
+        produtoDao.buscarNomeProduto(nome);
+    }
+
+    @Override
+    public void buscarNomeProduto(Produto produto) {
+        produtoDao.buscarNomeProduto(produto);
     }
 
     

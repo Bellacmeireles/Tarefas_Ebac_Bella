@@ -10,9 +10,19 @@ public class ProdutoDAO implements IProdutoDao {
     }
 
     @Override
-    public Produto buscarProduto(String nome) {
+    public Produto buscarIDProduto(Long codigo) {
         
         return null;
+    }
+
+    @Override
+    public void buscarNomeProduto(String nome) {
+        
+    }
+
+    @Override
+    public void buscarNomeProduto(Produto produto) {
+        
     }
 
    

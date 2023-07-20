@@ -14,10 +14,20 @@ public class ProdutoDaoMock implements IProdutoDao {
     }
 
     @Override
-    public Produto buscarProduto(String nome) {
+    public Produto buscarIDProduto(Long codigo) {
         Produto produto = new Produto();
-        produto.setNome(nome);
+        produto.setCodigo(codigo);
         return produto;
+    }
+
+    @Override
+    public void buscarNomeProduto(String nome) {
+        
+    }
+
+    @Override
+    public void buscarNomeProduto(Produto produto) {
+        
     }
 
     
