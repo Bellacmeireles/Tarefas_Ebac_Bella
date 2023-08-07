@@ -1,4 +1,4 @@
-package Aulas;
+package Modulo9.Aulas;
 
 /**
  * @author Bellacmeireles
